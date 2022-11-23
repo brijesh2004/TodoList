@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container" id = "container">
+    <h1>TODO LIST </h1> <br><br>
+    <input type="text" id="name" class="input" placeholder="Enter task"> <br> <br>
+    <input type="button" value="Add" id="btnClick" class="btn" onclick="ADD()" > <br> <br>
+    <span id="error"></span>
+    </div>
+    <div class="items">
+    <ul id="box"></ul>
+
+    </div>
+
+    <div id="popbox">
+        password <input type="password" placeholder="Create your Password" class="input1" id="password"> <br> <br>
+        <button onclick="addMore()" class="btn">ADD</button>
+      </div>
+
+      <div id="del">
+        password <input type="password" placeholder="Enter your Password" class="input1" id="password1"> <br> <br>
+
+        <button class="btn"  id="deletebox">  DELETE</button>
+        <button class="btn"  id="back"> Back</button>
+
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
