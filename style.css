@@ -3,35 +3,53 @@
     padding: 0;
 }
 body{
-  background-color: darkcyan;
+  background-color: black;
+}
+h1{
+    text-decoration: underline dashed 10px rgb(255, 0, 251);
+    font-size: 40px;
 }
 .container{
     text-align: center;
-    background-color: darkgrey;
+    background-color: rgb(46, 31, 31);
     box-shadow: 10px 10px 10px white;
     width: 100vw;
+    color: white;
 }
 .input{
     width: 500px;
     height: 28px;
-    border:2px solid black;
+    border:4px solid white;
+    border-radius: 20px;
 }
 .btn{
-    width: 60px;
-    height: 28px;
+    width: 150px;
+    height: 36px;
+    background:linear-gradient(rgb(192, 72, 190),pink,rgb(247, 2, 255) );
     cursor: pointer;
+    color: black;
+    font-size: 20px;
+    border-radius: 50px;
+    border-width: 6px;
+    border-color: gold;
+    box-shadow:5px 5px  20px rgb(174, 0, 255);
 }
 .items{
 min-height: 600px;
-background-color: beige;
+
+background-color: black;
+color: white;
 position: relative;
 text-align: center;
 justify-content: center;
 align-items: center;
 }
+#box{
+    display: flex;
+}
 ul{
     margin-top: 50px;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
     justify-content: center;
 }
@@ -39,31 +57,42 @@ li{
     text-decoration: none;
     list-style: none;
     text-align: center;
-    border: 1px solid black;
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px white;
+   background-color: rgb(73, 72, 72);
     margin: 15px;
-    width: 90%;
+    width: 180px;
     font-size: 20px;
 }
 a{
+    display: flex;
     position: relative;
+
+    justify-content: center;
     color: rgb(255, 0, 0);
     /* left: 35%; */
     /* right: -20%; */
     cursor: pointer;
 }
 #popbox{
+
     align-items: center;
-    position: fixed;
+    position:fixed;
     text-align: center;
-  margin-top: -650px;
+  margin-top: -820px;
+ 
+  /* margin-top: -60%; */
   z-index: 300;
   border: 2px solid black;
   width: 100vw;
-  height: 100vh;
+  height: 400px;
   background-color: aqua;
  display: none;
 }
 .input1{
+   
     width: 500px;
     height: 28px;
     border:2px solid black;
@@ -71,9 +100,9 @@ a{
 }
 #del{
     align-items: center;
-    position: fixed;
+    position: absolute;
     text-align: center;
-  margin-top: -650px;
+  margin-top: -820px;
   z-index: 300;
   border: 2px solid black;
   width: 100vw;

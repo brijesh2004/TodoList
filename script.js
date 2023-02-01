@@ -1,15 +1,17 @@
 function ADD() {
     let popbox = document.getElementById("popbox");
-    let box = document.getElementById("box")
+    let box = document.getElementById("box");
     let nam = document.getElementById("name");
+    box.style.display = "none";
     let name = document.getElementById("name").value;
     if (nam.value == '') {
         nam.style.border = "2px solid red";
     }
     else {
         popbox.style.display = "block";
+      
     }
-
+    box.style.display = "block";
     //    box.style.display="none";       
 
 }
@@ -26,6 +28,7 @@ function addMore() {
         // popbox.style.visibility="visible";
         let password = document.getElementById('password').value;
         //   console.log(password);
+       
         popbox.style.display = "none";
         let box = document.getElementById('box');
         let li = document.createElement('li');
@@ -33,6 +36,9 @@ function addMore() {
         li.textContent = name;
         let a = document.createElement('a');
         a.textContent = "DELETE";
+        // a.insertAdjacentHTML='<i class="fa fa-trash"></i>'
+        // a.innerHTML='<i class="fa fa-trash"></i>';
+        // a.textContent = `${'<i class="fa fa-trash"></i>'}`;
         
         a.setAttribute("data-password", password);
        a.onclick = "DEL()";
